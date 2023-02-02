@@ -23,6 +23,11 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.screen .viewScreen .browsers .options p{
+  margin: 0;
+  padding: 0 0.2rem;
+  font-size: 0.8rem;
+}
 
 .App-link {
   color: #61dafb;
