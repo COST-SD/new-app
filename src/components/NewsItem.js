@@ -17,7 +17,8 @@ const NewsItem = (props)=> {
                     <img src={!imageUrl ? "https://fdn.gsmarena.com/imgroot/news/21/08/xiaomi-smart-home-india-annoucnements/-476x249w4/gsmarena_00.jpg" : imageUrl} className="card-img-top" alt="..." />
                     <div className="card-body">
                         <h5 className="card-title">{title}  </h5>
-                        {description}
+                        <div className="card-text"><Markup content={description} /></div>
+                        
                         <p className="card-text"><small className="text-danger">By {!author ? "Unknown" : author} on  {new Date(date).toGMTString()}</small></p>
                         <a rel="noreferrer" href={newsUrl} target="_blank" className="btn btn-sm btn-dark">Read More</a>
                     </div>
