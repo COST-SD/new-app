@@ -1,1 +1,101 @@
- 
+body{
+    font-family: sans-serif;
+}
+img{
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.screen{
+    width:100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.screen .viewScreen{
+    width: 20rem;
+    height: 20rem;
+    background-color: white;
+}
+.screen .viewScreen .top-det{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+.screen .viewScreen .top-logo img{
+    height: 1.5rem;
+}
+.screen .viewScreen .top-title{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.screen .viewScreen .features{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+.screen .viewScreen .features a{
+    text-decoration: none;
+    color: black;
+}
+.screen .viewScreen .features .options{
+    /* background-color: black; */
+    text-align: center;
+}
+.screen .viewScreen .features .options p{
+    padding-top: 0.5rem;
+    font-size: 0.8rem;
+    font-weight:400;
+    margin: 0;
+}
+.screen .viewScreen .pointBreaker{
+    color: #888;
+    font-size: 0.8rem;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+}
+.screen .viewScreen .pointBreaker .span1{
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.3rem;
+}
+.screen .viewScreen .pointBreaker .span1 .borderOnly{
+    border-top: 1px solid #ddd;
+    min-width: 65px;
+}
+.screen .viewScreen .browsers{
+    display: flexbox;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.screen .viewScreen .browsers a{
+    color: #111;
+    text-decoration: none;
+}
+.screen .viewScreen .browsers .options{
+    display: flex;
+    border: 1px solid #ddd;
+    padding: 0.3rem;
+    border-radius: 1rem;
+    justify-content: left;
+    align-items: center;
+    margin: 0.2rem 0.5rem;
+    min-width: 6rem;
+}
+.screen .viewScreen .browsers .options img{
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+}
+.screen .viewScreen .browsers .options p{
+    margin: 0;
+    padding: 0 0.2rem;
+    font-size: 0.8rem;
+}
